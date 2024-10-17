@@ -84,7 +84,7 @@
             </li>
 
             <!-- Bảng Giá -->
-            <li class="nav-item <?php if($current_page == 'bang_gia') { echo 'active'; } ?>">
+            <li class="nav-item <?php if($current_page == 'bang-gia') { echo 'active'; } ?>">
               <a class="nav-link" href="bang-gia.php">Bảng Giá</a>
             </li>
 
