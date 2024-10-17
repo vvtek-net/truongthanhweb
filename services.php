@@ -1,7 +1,27 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+<?php
+include('config/db_connection.php');
+
+// Xác định số dòng tối đa trên mỗi trang
+$limit = 12;
+
+// Xác định trang hiện tại (mặc định là trang 1 nếu không có giá trị trong URL)
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$start = ($page - 1) * $limit;
+
+// Đếm tổng số dòng dữ liệu trong bảng website_templates
+$sql_count = "SELECT COUNT(*) AS total FROM website_templates";
+$result_count = mysqli_query($conn, $sql_count);
+$row_count = mysqli_fetch_assoc($result_count);
+$total = $row_count['total'];
+
+// Tính tổng số trang
+$total_pages = ceil($total / $limit);
+
+// Truy vấn dữ liệu với phân trang (giới hạn 12 dòng mỗi trang)
+$sql = "SELECT * FROM website_templates LIMIT $start, $limit";
+$result = mysqli_query($conn, $sql);
+
+?>
 <!doctype html>
 <html lang="zxx">
 
@@ -22,83 +42,21 @@ Author URL: http://w3layouts.com
   <!--header-->
   <div class="header-w3l">
     <!-- header -->
-    <header id="site-header" class="fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg stroke">
-          <a class="navbar-brand" href="index.html">
-           Med<span class="sub-logo">i</span>ck</span>
-          </a>
-          <!-- if logo is image enable this   
-            <a class="navbar-brand" href="#index.html">
-                <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-            </a> -->
-          <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-            </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mx-lg-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link"href="services.html">Departments</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="search-bar ml-lg-3 mr-lg-5 mt-lg-0 mt-4">
-                <!--/search-right-->
-                <form class="search position-relative">
-                  <input type="search" class="search__input" name="search" placeholder="Search here.."
-                    onload="equalWidth()" required="">
-                  <span class="fa fa-search search__icon"></span>
-                </form>
-
-                <!--//search-right-->
-              </li>
-
-            </ul>
-
-          </div>
-          <!-- toggle switch for light and dark theme -->
-          <div class="mobile-position">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox">
-                  <div class="mode-container">
-                    <i class="gg-sun"></i>
-                    <i class="gg-moon"></i>
-                  </div>
-                </label>
-              </div>
-            </nav>
-          </div>
-          <!-- //toggle switch for light and dark theme -->
-        </nav>
-      </div>
-    </header>
+    <?php
+  include('includes/header.php');
+  ?>
+  </div>
+  <!-- //header -->
+  <!--/breadcrumb-bg-->
+  <div class="breadcrumb-bg w3l-inner-page-breadcrumb py-5">
+    <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
+      <h2 class="title pt-5">Mẫu Website Trọn Gói</h2>
+      <ul class="breadcrumbs-custom-path mt-3 text-center">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Mẫu Website </li>
+      </ul>
     </div>
-    <!-- //header -->
-    <!--/breadcrumb-bg-->
-    <div class="breadcrumb-bg w3l-inner-page-breadcrumb py-5">
-      <div class="container pt-lg-5 pt-md-3 p-lg-4 pb-md-3 my-lg-3">
-        <h2 class="title pt-5">Departments</h2>
-        <ul class="breadcrumbs-custom-path mt-3 text-center">
-          <li><a href="index.html">Home</a></li>
-          <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Departments </li>
-        </ul>
-      </div>
-    </div>
+  </div>
   <!--//breadcrumb-bg-->
   <!-- banner bottom shape -->
   <div class="position-relative">
@@ -109,165 +67,92 @@ Author URL: http://w3layouts.com
     </div>
   </div>
   <!-- banner bottom shape -->
-  <!--/serices-6-->
-  <section class="w3l-serices-6 py-5" id="services1">
+   <!--/serices-6-->
+   <section class="w3l-serices-6 py-5" id="services1">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="title-content text-center">
-        <h6 class="title-subhny text-center">
-          Services
-        </h6>
-        <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center">Our Departments</h3>
+        <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center" style="color: #2caee2;">Mẫu website</h3>
       </div>
       <div class="grids-area-hny text-center row mt-lg-4">
-        <div class="col-lg-4 col-md-6 grids-feature">
-          <div class="area-box icon-blue">
-              <a href="#"> <img src="assets/images/g1.jpg" alt="" class="img-fluid radius-image"></a>
-              <h4><a href="#feature" class="title-head">Prosthodontist</a></h4>
-              <!--/des-->
-                <div class="w3doctor-box-bottom">
-                  <div class="doctor-phone"><p><a href="tel:+1(21) 234 4567">+1(21) 234 557 4567</a></p></div>
-                <div class="social-icons-dr">
-                  <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-                  <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
+
+      <!-- Hiển thị dữ liệu từ bảng website_templates -->
+      <?php
+      if (mysqli_num_rows($result) > 0) {
+          while ($row = mysqli_fetch_assoc($result)) {
+              ?>
+              <div class="col-lg-4 col-md-6 grids-feature">
+                <div class="area-box icon-blue">
+                    <!-- Sửa thành image_url trong database -->
+                    <a href="#"> <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image"></a>
+                    <!-- Sửa thành title trong database -->
+                    <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
+                    <!--/des-->
+                    <div class="w3doctor-box-bottom">
+                      <!-- Sửa thành price trong database -->
+                      <div class="doctor-phone"><p><?php echo number_format($row['price'], 0, ',', '.'); ?> VND</p></div>
+                    </div>
+                  <!--//des-->
                 </div>
               </div>
-            <!--//des-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
-          <div class="area-box icon-pink">
-            <a href="#"> <img src="assets/images/g2.jpg" alt="" class="img-fluid radius-image"></a>
-            <h4><a href="#feature" class="title-head">Orthodontist</a></h4>
-             <!--/des-->
-             <div class="w3doctor-box-bottom">
-              <div class="doctor-phone"><p><a href="tel:+1(21) 234 4588">+1(21) 234 557 4588</a></p></div>
-            <div class="social-icons-dr">
-              <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-              <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
-            </div>
-          </div>
-        <!--//des-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
-          <div class="area-box icon-yellow">
-            <a href="#"> <img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image"></a>
-            <h4><a href="#feature" class="title-head">Oral Health Therapist</a></h4>
-            <!--/des-->
-            <div class="w3doctor-box-bottom">
-              <div class="doctor-phone"><p><a href="tel:+1(21) 234 4597">+1(21) 234 557 4597</a></p></div>
-            <div class="social-icons-dr">
-              <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-              <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
-            </div>
-          </div>
-        <!--//des-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-          <div class="area-box icon-yellow">
-            <a href="#"> <img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image"></a>
-            <h4><a href="#feature" class="title-head">
-              Implantologist</a></h4>
-           <!--/des-->
-           <div class="w3doctor-box-bottom">
-            <div class="doctor-phone"><p><a href="tel:+1(21) 234 4597">+1(21) 234 557 4597</a></p></div>
-          <div class="social-icons-dr">
-            <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-            <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
-          </div>
-        </div>
-      <!--//des-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-          <div class="area-box icon-yellow">
-            <a href="#"> <img src="assets/images/g5.jpg" alt="" class="img-fluid radius-image"></a>
-            <h4><a href="#feature" class="title-head">Orthodontist</a></h4>
-           <!--/des-->
-           <div class="w3doctor-box-bottom">
-            <div class="doctor-phone"><p><a href="tel:+1(21) 234 4567">+1(21) 234 557 4567</a></p></div>
-          <div class="social-icons-dr">
-            <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-            <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
-          </div>
-        </div>
-      <!--//des-->
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-          <div class="area-box icon-yellow">
-            <a href="#"> <img src="assets/images/g6.jpg" alt="" class="img-fluid radius-image"></a>
-            <h4><a href="#feature" class="title-head">
-              Cosmetic Dentist</a></h4>
-             <!--/des-->
-             <div class="w3doctor-box-bottom">
-              <div class="doctor-phone"><p><a href="tel:+1(21) 234 4569">+1(21) 234 557 4569</a></p></div>
-            <div class="social-icons-dr">
-              <a href="#url" class="twitter"><span class="fa fa-twitter"></span></a>
-              <a href="#url" class="facebook"><span class="fa fa-facebook"></span></a>
-            </div>
-          </div>
-        <!--//des-->
-          </div>
-        </div>
+              <?php
+          }
+      } else {
+          echo "Không có dữ liệu.";
+      }
+      ?>
+
       </div>
+
+     <!-- Phân trang -->
+<div class="pagination mt-4">
+  <ul class="pagination justify-content-center">
+    <?php
+    // Nút "Trước"
+    if ($page > 1) {
+        echo '<li class="page-item"><a class="page-link" href="services.php?page=' . ($page - 1) . '">Trước</a></li>';
+    }
+
+    // Hiển thị nút 1 và dấu "..." nếu trang hiện tại lớn hơn 4
+    if ($page > 4) {
+        echo '<li class="page-item"><a class="page-link" href="services.php?page=1">1</a></li>';
+        if ($page > 5) {
+            echo '<li class="page-item"><span class="page-link">...</span></li>';
+        }
+    }
+
+    // Hiển thị các trang từ (page-3) đến (page+3)
+    for ($i = max(1, $page - 3); $i <= min($total_pages, $page + 3); $i++) {
+        if ($i == $page) {
+            echo '<li class="page-item active"><span class="page-link">' . $i . '</span></li>';
+        } else {
+            echo '<li class="page-item"><a class="page-link" href="services.php?page=' . $i . '">' . $i . '</a></li>';
+        }
+    }
+
+    // Hiển thị dấu "..." và nút trang cuối nếu còn các trang sau trang hiện tại
+    if ($page < $total_pages - 3) {
+        if ($page < $total_pages - 4) {
+            echo '<li class="page-item"><span class="page-link">...</span></li>';
+        }
+        echo '<li class="page-item"><a class="page-link" href="services.php?page=' . $total_pages . '">' . $total_pages . '</a></li>';
+    }
+
+    // Nút "Sau"
+    if ($page < $total_pages) {
+        echo '<li class="page-item"><a class="page-link" href="services.php?page=' . ($page + 1) . '">Sau</a></li>';
+    }
+    ?>
+  </ul>
+</div>
+
+
     </div>
   </section>
   <!--//services-6-->
   <!-- footer -->
-  <section class="w3l-footer-29-main">
-    <div class="footer-29 py-5">
-      <div class="container py-lg-4">
-        <div class="row footer-top-29">
-          <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-1 pr-lg-5">
-            <div class="footer-logo mb-3">
-              <a class="navbar-brand" href="index.html">Medick</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.</p>
-            <ul class="mt-3">
-              <li><a href="tel:+(21) 255 999 8888"><span class="fa fa-phone"></span> +(21) 255 999 8888</a></li>
-              <li><a href="mailto:medick@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
-                  medick@mail.com</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-2 mt-sm-0 mt-5">
-
-            <ul>
-              <h6 class="footer-title-29">History</h6>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="blog.html"> Blog Posts</a></li>
-              <li><a href="services.html">Departments</a></li>
-              <li><a href="#careers"> Careers</a></li>
-              <li><a href="about.html">Team</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list-29 footer-3 mt-lg-0 mt-5">
-            <h6 class="footer-title-29">Useful Links</h6>
-            <ul>
-              <li><a href="#terms">Terms of service</a></li>
-              <li><a href="#privacy"> Privacy policy</a></li>
-              <li><a href="#doc"> Documentation</a></li>
-              <li><a href="#support"> Support</a></li>
-              <li><a href="#components"> Components</a></li>
-              <li><a href="#changelog"> Changelog</a></li>
-            </ul>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
-            <h6 class="footer-title-29">Subscribe to our Newsletter </h6>
-            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
-
-            <form action="#" class="subscribe" method="post">
-              <input type="email" name="email" placeholder="Your Email Address" required="">
-              <button class="btn btn-style btn-primary w-100 mt-3">Subscibe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php
+  include('includes/footer.php');
+  ?>
   <!-- //footer -->
 
   <!-- copyright -->
@@ -288,34 +173,34 @@ Author URL: http://w3layouts.com
       </div>
     </div>
 
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-      &#10548;
-    </button>
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction()
-      };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- /move top -->
   </section>
   <!-- //copyright -->
   <!--//footer-->
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    &#10548;
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
   <!-- Template JavaScript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/theme-change.js"></script>

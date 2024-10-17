@@ -17357,6 +17357,41 @@ h3.post-content-title {
     font-size: 26px;
   }
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+}
+
+.pagination .active .page-link {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.pagination .page-link:focus {
+  outline: none;
+}
 
 
 /*# sourceMappingURL=style-freedom.css.map */
