@@ -31,57 +31,76 @@ $result = mysqli_query($conn, $sql);
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
     content="Medick Responsive web template, Bootstrap Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-  <title>Medick Medical Category Bootstrap Responsive Web Template | Services :: W3Layouts </title>
+  <title>Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <!-- Template CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-   <link rel="stylesheet" href="assets/css/body.css">
+  <link rel="stylesheet" href="assets/css/body.css">
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <link rel="stylesheet" href="assets/css/tags.css">
   <style>
     /* /* Đặt vị trí cho container chứa hình ảnh */
-.image-container {
-    overflow: hidden; /* Ẩn phần hình ảnh bị scroll ra ngoài */
-    height: 200px; /* Chiều cao cho hình ảnh */
-    position: relative;
-}
+    .image-container {
+      overflow: hidden;
+      /* Ẩn phần hình ảnh bị scroll ra ngoài */
+      height: 200px;
+      /* Chiều cao cho hình ảnh */
+      position: relative;
+    }
 
-.image-container img {
-    transition: transform 12s ease; /* Tạo hiệu ứng scroll mượt mà */
-    transform: translateY(0); /* Đặt hình ảnh ở trạng thái ban đầu */
-}
+    .image-container img {
+      transition: transform 12s ease;
+      /* Tạo hiệu ứng scroll mượt mà */
+      transform: translateY(0);
+      /* Đặt hình ảnh ở trạng thái ban đầu */
+    }
 
-/* Khi hover vào container, hình ảnh sẽ scroll từ trên xuống dưới */
-.image-container:hover img {
-    transform: translateY(-80%); /* Scroll toàn bộ hình ảnh lên trên */
-}
+    /* Khi hover vào container, hình ảnh sẽ scroll từ trên xuống dưới */
+    .image-container:hover img {
+      transform: translateY(-80%);
+      /* Scroll toàn bộ hình ảnh lên trên */
+    }
 
-/* Ẩn nút Demo mặc định */
-.demo-button a {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
+    /* Ẩn nút Demo mặc định */
+    .demo-button a {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
 
-/* Khi hover vào .area-box thì hiện nút Demo */
-.area-box:hover .demo-button a {
-    opacity: 1;
-    visibility: visible;
-}
+    /* Khi hover vào .area-box thì hiện nút Demo */
+    .area-box:hover .demo-button a {
+      opacity: 1;
+      visibility: visible;
+    }
 
-/* Thiết lập để làm hiệu ứng khi hover */
-.area-box {
-    position: relative;
-    transition: transform 0.3s ease;
-}
+    /* Thiết lập để làm hiệu ứng khi hover */
+    .area-box {
+      position: relative;
+      transition: transform 0.3s ease;
+    }
 
-.area-box:hover {
-    transform: translateY(-5px);
-}
- */
+    .area-box:hover {
+      transform: translateY(-5px);
+    }
 
+    /* Thiết lập để nút Demo hiện ra khi màn hình nhỏ hơn 768px (giao diện điện thoại) */
+    @media (max-width: 768px) {
+      .demo-button a {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    /* Thiết lập để nút Demo hiện ra khi màn hình nhỏ hơn 992px (giao diện điện thoại và tablet) */
+    @media (max-width: 992px) {
+      .demo-button a {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   </style>
 </head>
 
@@ -90,8 +109,8 @@ $result = mysqli_query($conn, $sql);
   <div class="header-w3l">
     <!-- header -->
     <?php
-  include('includes/header.php');
-  ?>
+    include('includes/header.php');
+    ?>
   </div>
   <!-- //header -->
   <!--/breadcrumb-bg-->
@@ -114,107 +133,106 @@ $result = mysqli_query($conn, $sql);
     </div>
   </div>
   <!-- banner bottom shape -->
-   <!--/serices-6-->
-<section class="w3l-serices-6 py-5" id="services1">
+  <!--/serices-6-->
+  <section class="w3l-serices-6 py-5" id="services1">
     <div class="container py-lg-5 py-md-4 py-2">
-        <div class="title-content text-center">
-            <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center" style="color: #2caee2;">Mẫu website</h3>
-        </div>
-        <div class="grids-area-hny text-center row mt-lg-4">
+      <div class="title-content text-center">
+        <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center" style="color: #2caee2;">Mẫu website</h3>
+      </div>
+      <div class="grids-area-hny text-center row mt-lg-4">
 
         <!-- Hiển thị dữ liệu từ bảng website_templates -->
         <?php
         if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                ?>
-                <div class="col-lg-4 col-md-6 grids-feature item-demo">
-    <div class="area-box icon-blue">
-        <!-- Sửa thành image_url trong database -->
-        <a href="#">
-            <div class="image-container">
-                <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image">
-            </div>
-        </a>
-        <!-- Sửa thành title trong database -->
-        <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
-        <!--/des-->
-        <div class="w3doctor-box-bottom align-items-center">
-            <!-- Thêm điều kiện kiểm tra và in tag tương ứng với price -->
-            <div class="doctor-phone text-start">
-                <p>
-                    <?php
-                    if ($row['price'] < 5000000) {
+          while ($row = mysqli_fetch_assoc($result)) {
+        ?>
+            <div class="col-lg-4 col-md-6 grids-feature item-demo mt-4">
+              <div class="area-box icon-blue">
+                <!-- Sửa thành image_url trong database -->
+                <a href="#">
+                  <div class="image-container">
+                    <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image">
+                  </div>
+                </a>
+                <!-- Sửa thành title trong database -->
+                <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
+                <!--/des-->
+                <div class="w3doctor-box-bottom align-items-center">
+                  <!-- Thêm điều kiện kiểm tra và in tag tương ứng với price -->
+                  <div class="doctor-phone text-start">
+                    <p>
+                      <?php
+                      if ($row['price'] < 5000000) {
                         echo '<span class="version-theme-co-ban" style="font-size: 14px;">Cơ bản</span>';
-                    } elseif ($row['price'] >= 5000000 && $row['price'] < 7000000) {
+                      } elseif ($row['price'] >= 5000000 && $row['price'] < 7000000) {
                         echo '<span class="version-theme-tieu-chuan" style="font-size: 14px;">Tiêu chuẩn</span>';
-                    } elseif ($row['price'] > 9000000) {
+                      } elseif ($row['price'] > 9000000) {
                         echo '<span class="version-theme-cao-cap" style="font-size: 14px;"><i class="fa-solid fa-crown" style="font-size: 13px"></i> Cao cấp</span>';
-                    }
-                    ?>
-                </p>
+                      }
+                      ?>
+                    </p>
+                  </div>
+                  <div class="text-end demo-button">
+                    <a href="demo.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary" target="_blank">Demo</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="text-end demo-button">
-              <a href="demo.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary" target="_blank">Demo</a>
-          </div>
 
-        </div>
-    </div>
-</div>
-
-                <?php
-            }
+        <?php
+          }
         } else {
-            echo "Không có dữ liệu.";
+          echo "Không có dữ liệu.";
         }
         ?>
 
-        </div>
+      </div>
 
-        <!-- Phân trang -->
-        <div class="pagination mt-4">
-            <ul class="pagination justify-content-center">
-                <?php
-                // Nút "Trước"
-                if ($page > 1) {
-                    echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page - 1) . '">Trước</a></li>';
-                }
+      <!-- Phân trang -->
+      <div class="pagination mt-4">
+        <ul class="pagination justify-content-center">
+          <?php
+          // Nút "Trước"
+          if ($page > 1) {
+            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page - 1) . '">Trước</a></li>';
+          }
 
-                // Hiển thị nút 1 và dấu "..." nếu trang hiện tại lớn hơn 4
-                if ($page > 4) {
-                    echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=1">1</a></li>';
-                    if ($page > 5) {
-                        echo '<li class="page-item"><span class="page-link">...</span></li>';
-                    }
-                }
+          // Hiển thị nút 1 và dấu "..." nếu trang hiện tại lớn hơn 4
+          if ($page > 4) {
+            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=1">1</a></li>';
+            if ($page > 5) {
+              echo '<li class="page-item"><span class="page-link">...</span></li>';
+            }
+          }
 
-                // Hiển thị các trang từ (page-3) đến (page+3)
-                for ($i = max(1, $page - 3); $i <= min($total_pages, $page + 3); $i++) {
-                    if ($i == $page) {
-                        echo '<li class="page-item active"><span class="page-link">' . $i . '</span></li>';
-                    } else {
-                        echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $i . '">' . $i . '</a></li>';
-                    }
-                }
+          // Hiển thị các trang từ (page-3) đến (page+3)
+          for ($i = max(1, $page - 3); $i <= min($total_pages, $page + 3); $i++) {
+            if ($i == $page) {
+              echo '<li class="page-item active"><span class="page-link">' . $i . '</span></li>';
+            } else {
+              echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $i . '">' . $i . '</a></li>';
+            }
+          }
 
-                // Hiển thị dấu "..." và nút trang cuối nếu còn các trang sau trang hiện tại
-                if ($page < $total_pages - 3) {
-                    if ($page < $total_pages - 4) {
-                        echo '<li class="page-item"><span class="page-link">...</span></li>';
-                    }
-                    echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $total_pages . '">' . $total_pages . '</a></li>';
-                }
+          // Hiển thị dấu "..." và nút trang cuối nếu còn các trang sau trang hiện tại
+          if ($page < $total_pages - 3) {
+            if ($page < $total_pages - 4) {
+              echo '<li class="page-item"><span class="page-link">...</span></li>';
+            }
+            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $total_pages . '">' . $total_pages . '</a></li>';
+          }
 
-                // Nút "Sau"
-                if ($page < $total_pages) {
-                    echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page + 1) . '">Sau</a></li>';
-                }
-                ?>
-            </ul>
-        </div>
+          // Nút "Sau"
+          if ($page < $total_pages) {
+            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page + 1) . '">Sau</a></li>';
+          }
+          ?>
+        </ul>
+      </div>
 
     </div>
-</section>
-<!--//website_tron_goi-6-->
+  </section>
+  <!--//website_tron_goi-6-->
 
   <!-- footer -->
   <?php
@@ -249,7 +267,7 @@ $result = mysqli_query($conn, $sql);
   </button>
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
+    window.onscroll = function() {
       scrollFunction()
     };
 
@@ -274,8 +292,8 @@ $result = mysqli_query($conn, $sql);
 
   <!-- disable body scroll which navbar is in active -->
   <script>
-    $(function () {
-      $('.navbar-toggler').click(function () {
+    $(function() {
+      $('.navbar-toggler').click(function() {
         $('body').toggleClass('noscroll');
       })
     });
@@ -284,7 +302,7 @@ $result = mysqli_query($conn, $sql);
 
   <!--/MENU-JS-->
   <script>
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
       var scroll = $(window).scrollTop();
 
       if (scroll >= 80) {
@@ -295,14 +313,14 @@ $result = mysqli_query($conn, $sql);
     });
 
     //Main navigation Active Class Add Remove
-    $(".navbar-toggler").on("click", function () {
+    $(".navbar-toggler").on("click", function() {
       $("header").toggleClass("active");
     });
-    $(document).on("ready", function () {
+    $(document).on("ready", function() {
       if ($(window).width() > 991) {
         $("header").removeClass("active");
       }
-      $(window).on("resize", function () {
+      $(window).on("resize", function() {
         if ($(window).width() > 991) {
           $("header").removeClass("active");
         }
@@ -312,24 +330,23 @@ $result = mysqli_query($conn, $sql);
   <!--//MENU-JS-->
 
   <!-- hover Demo -->
-    <script>
-      // Lấy tất cả các phần tử chứa nút Demo
-      const boxes = document.querySelectorAll('.item-demo');
+  <script>
+    // Lấy tất cả các phần tử chứa nút Demo
+    const boxes = document.querySelectorAll('.item-demo');
 
-      // Thêm sự kiện hover cho từng phần tử
-      boxes.forEach(box => {
-          box.addEventListener('mouseenter', () => {
-              box.querySelector('.demo-button a').style.opacity = '1';
-              box.querySelector('.demo-button a').style.visibility = 'visible';
-          });
-
-          box.addEventListener('mouseleave', () => {
-              box.querySelector('.demo-button a').style.opacity = '0';
-              box.querySelector('.demo-button a').style.visibility = 'hidden';
-          });
+    // Thêm sự kiện hover cho từng phần tử
+    boxes.forEach(box => {
+      box.addEventListener('mouseenter', () => {
+        box.querySelector('.demo-button a').style.opacity = '1';
+        box.querySelector('.demo-button a').style.visibility = 'visible';
       });
 
-    </script>
+      box.addEventListener('mouseleave', () => {
+        box.querySelector('.demo-button a').style.opacity = '0';
+        box.querySelector('.demo-button a').style.visibility = 'hidden';
+      });
+    });
+  </script>
 
   <script src="assets/js/bootstrap.min.js"></script>
 
