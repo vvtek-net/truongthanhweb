@@ -35,9 +35,9 @@
 		
 		<!-- content -->
 		<div class="lm-tabel">
-			<div class="lm-item lm-item-2">
+			<div class="lm-item lm-item-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 				<div class="lm-item-top">
-					<span class="lm-item-title lm-underline">Cơ Bản</span>
+					<span class="lm-item-title lm-underline text-white">Cơ Bản</span>
 					<div class="lm-item-price">4,188,000
 						<span>VNĐ</span>
 					</div>
@@ -60,14 +60,14 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-						<a class="popup-with-zoom-anim" href="#popup1">Đăng Ký Ngay</a>
+					<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
 					</div>
 				</div>
 				<div class="lm-item-bottom"></div>
 			</div>
-			<div class="lm-item lm-item-1">
+			<div class="lm-item lm-item-1" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 				<div class="lm-item-top">
-					<span class="lm-item-title lm-underline">Tiêu Chuẩn</span>
+					<span class="lm-item-title lm-underline text-white">Tiêu Chuẩn</span>
 					<div class="lm-item-price item-price2-w3ls">6,188,000
 						<span>VNĐ</span>
 					</div>
@@ -89,15 +89,17 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-						<a class="popup-with-zoom-anim" href="#popup1">Đăng Ký Ngay</a>
+					<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
 					</div>
 				</div>
 
 				<div class="lm-item-bottom"></div>
 			</div>
-			<div class="lm-item lm-item-3">
+			<div class="lm-item lm-item-3" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 				<div class="lm-item-top">
-					<span class="lm-item-title lm-underline">Cao Cấp</span>
+					<span class="lm-item-title lm-underline text-warning">
+					<i class="fa-solid fa-crown" style="font-size: 45px; "></i>	
+					Cao Cấp</span>
 					<div class="lm-item-price item-price3-w3ls">9,988,000
 						<span>VNĐ</span>
 					</div>
@@ -119,7 +121,7 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-						<a class="popup-with-zoom-anim" href="#popup1">Đăng Ký Ngay</a>
+						<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
 					</div>
 				</div>
 				<div class="lm-item-bottom"></div>
@@ -128,7 +130,7 @@
 		</div>
 		<!-- //content -->
 
-		<!-- popup -->
+		<!-- popup
 		<div id="popup1" class="pop-overlay">
 			<div class="popup">
 				<div class="signin-form profile">
@@ -148,7 +150,7 @@
 			</div>
 		</div>
 
-	</div>
+	</div> -->
 
 </body>
 
