@@ -8,8 +8,15 @@ $limit = 12;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $start = ($page - 1) * $limit;
 
-// Đếm tổng số dòng dữ liệu trong bảng website_templates
+// Lấy từ khóa tìm kiếm từ URL
+$search_keyword = isset($_GET['search']) ? $_GET['search'] : '';
+
+// Xây dựng câu truy vấn đếm tổng số dòng dữ liệu
 $sql_count = "SELECT COUNT(*) AS total FROM website_templates";
+if (!empty($search_keyword)) {
+    $sql_count .= " WHERE title LIKE '%" . mysqli_real_escape_string($conn, $search_keyword) . "%'";
+}
+
 $result_count = mysqli_query($conn, $sql_count);
 $row_count = mysqli_fetch_assoc($result_count);
 $total = $row_count['total'];
@@ -18,10 +25,14 @@ $total = $row_count['total'];
 $total_pages = ceil($total / $limit);
 
 // Truy vấn dữ liệu với phân trang (giới hạn 12 dòng mỗi trang)
-$sql = "SELECT * FROM website_templates LIMIT $start, $limit";
+$sql = "SELECT * FROM website_templates";
+if (!empty($search_keyword)) {
+    $sql .= " WHERE title LIKE '%" . mysqli_real_escape_string($conn, $search_keyword) . "%'";
+}
+$sql .= " LIMIT $start, $limit";
 $result = mysqli_query($conn, $sql);
-
 ?>
+
 <!doctype html>
 <html lang="zxx">
 
@@ -34,6 +45,8 @@ $result = mysqli_query($conn, $sql);
   <title>Mẫu Web - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <!-- Thêm favicon -->
+    <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
   <!-- Template CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
@@ -133,106 +146,100 @@ $result = mysqli_query($conn, $sql);
     </div>
   </div>
   <!-- banner bottom shape -->
-  <!--/serices-6-->
-  <section class="w3l-serices-6 py-5" id="services1">
+  <!--/services-6-->
+<section class="w3l-serices-6 py-5" id="services1">
     <div class="container py-lg-5 py-md-4 py-2">
-      <div class="title-content text-center">
-        <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center" style="color: #2caee2;">Mẫu website</h3>
-      </div>
-      <div class="grids-area-hny text-center row mt-lg-4">
+        <div class="title-content text-center">
+            <h3 class="title-w3l mb-sm-5 mb-4 pb-sm-o pb-2 text-center" style="color: #2caee2;">Mẫu website</h3>
+        </div>
+        <div class="grids-area-hny text-center row mt-lg-4">
 
-        <!-- Hiển thị dữ liệu từ bảng website_templates -->
-        <?php
-        if (mysqli_num_rows($result) > 0) {
-          while ($row = mysqli_fetch_assoc($result)) {
-        ?>
-            <div class="col-lg-4 col-md-6 grids-feature item-demo mt-4">
-              <div class="area-box icon-blue">
-                <!-- Sửa thành image_url trong database -->
-                <a href="#">
-                  <div class="image-container">
-                    <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image">
-                  </div>
-                </a>
-                <!-- Sửa thành title trong database -->
-                <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
-                <!--/des-->
-                <div class="w3doctor-box-bottom align-items-center">
-                  <!-- Thêm điều kiện kiểm tra và in tag tương ứng với price -->
-                  <div class="doctor-phone text-start">
-                    <p>
-                      <?php
-                      if ($row['price'] < 5000000) {
-                        echo '<span class="version-theme-co-ban" style="font-size: 14px;">Cơ bản</span>';
-                      } elseif ($row['price'] >= 5000000 && $row['price'] < 7000000) {
-                        echo '<span class="version-theme-tieu-chuan" style="font-size: 14px;">Tiêu chuẩn</span>';
-                      } elseif ($row['price'] > 9000000) {
-                        echo '<span class="version-theme-cao-cap" style="font-size: 14px;"><i class="fa-solid fa-crown" style="font-size: 13px"></i> Cao cấp</span>';
-                      }
-                      ?>
-                    </p>
-                  </div>
-                  <div class="text-end demo-button">
-                    <a href="demo.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary text-white" target="_blank">Demo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        <?php
-          }
-        } else {
-          echo "Không có dữ liệu.";
-        }
-        ?>
-
-      </div>
-
-      <!-- Phân trang -->
-      <div class="pagination mt-4">
-        <ul class="pagination justify-content-center">
-          <?php
-          // Nút "Trước"
-          if ($page > 1) {
-            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page - 1) . '">Trước</a></li>';
-          }
-
-          // Hiển thị nút 1 và dấu "..." nếu trang hiện tại lớn hơn 4
-          if ($page > 4) {
-            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=1">1</a></li>';
-            if ($page > 5) {
-              echo '<li class="page-item"><span class="page-link">...</span></li>';
-            }
-          }
-
-          // Hiển thị các trang từ (page-3) đến (page+3)
-          for ($i = max(1, $page - 3); $i <= min($total_pages, $page + 3); $i++) {
-            if ($i == $page) {
-              echo '<li class="page-item active"><span class="page-link">' . $i . '</span></li>';
+            <!-- Hiển thị dữ liệu từ bảng website_templates -->
+            <?php
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+            ?>
+                    <div class="col-lg-4 col-md-6 grids-feature item-demo mt-4">
+                        <div class="area-box icon-blue">
+                            <a href="#">
+                                <div class="image-container">
+                                    <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image">
+                                </div>
+                            </a>
+                            <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
+                            <div class="w3doctor-box-bottom align-items-center">
+                                <div class="doctor-phone text-start">
+                                    <p>
+                                        <?php
+                                        if ($row['price'] < 5000000) {
+                                            echo '<span class="version-theme-co-ban" style="font-size: 14px;">Cơ bản</span>';
+                                        } elseif ($row['price'] >= 5000000 && $row['price'] < 7000000) {
+                                            echo '<span class="version-theme-tieu-chuan" style="font-size: 14px;">Tiêu chuẩn</span>';
+                                        } elseif ($row['price'] > 9000000) {
+                                            echo '<span class="version-theme-cao-cap" style="font-size: 14px;"><i class="fa-solid fa-crown" style="font-size: 13px"></i> Cao cấp</span>';
+                                        }
+                                        ?>
+                                    </p>
+                                </div>
+                                <div class="text-end demo-button">
+                                    <a href="demo.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary text-white" target="_blank">Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <?php
+                }
             } else {
-              echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $i . '">' . $i . '</a></li>';
+                echo "<p>Không có kết quả nào phù hợp với từ khóa: <strong>" . htmlspecialchars($search_keyword) . "</strong>.</p>";
             }
-          }
+            ?>
 
-          // Hiển thị dấu "..." và nút trang cuối nếu còn các trang sau trang hiện tại
-          if ($page < $total_pages - 3) {
-            if ($page < $total_pages - 4) {
-              echo '<li class="page-item"><span class="page-link">...</span></li>';
-            }
-            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . $total_pages . '">' . $total_pages . '</a></li>';
-          }
+        </div>
 
-          // Nút "Sau"
-          if ($page < $total_pages) {
-            echo '<li class="page-item"><a class="page-link" href="website_tron_goi.php?page=' . ($page + 1) . '">Sau</a></li>';
-          }
-          ?>
-        </ul>
-      </div>
+        <!-- Phân trang -->
+        <div class="pagination mt-4">
+            <ul class="pagination justify-content-center">
+                <?php
+                // Nút "Trước"
+                if ($page > 1) {
+                    echo '<li class="page-item"><a class="page-link" href="website-tron-goi.php?search=' . urlencode($search_keyword) . '&page=' . ($page - 1) . '">Trước</a></li>';
+                }
 
+                // Hiển thị nút 1 và dấu "..." nếu trang hiện tại lớn hơn 4
+                if ($page > 4) {
+                    echo '<li class="page-item"><a class="page-link" href="website-tron-goi.php?search=' . urlencode($search_keyword) . '&page=1">1</a></li>';
+                    if ($page > 5) {
+                        echo '<li class="page-item"><span class="page-link">...</span></li>';
+                    }
+                }
+
+                // Hiển thị các trang từ (page-3) đến (page+3)
+                for ($i = max(1, $page - 3); $i <= min($total_pages, $page + 3); $i++) {
+                    if ($i == $page) {
+                        echo '<li class="page-item active"><span class="page-link">' . $i . '</span></li>';
+                    } else {
+                        echo '<li class="page-item"><a class="page-link" href="website-tron-goi.php?search=' . urlencode($search_keyword) . '&page=' . $i . '">' . $i . '</a></li>';
+                    }
+                }
+
+                // Hiển thị dấu "..." và nút trang cuối nếu còn các trang sau trang hiện tại
+                if ($page < $total_pages - 3) {
+                    if ($page < $total_pages - 4) {
+                        echo '<li class="page-item"><span class="page-link">...</span></li>';
+                    }
+                    echo '<li class="page-item"><a class="page-link" href="website-tron-goi.php?search=' . urlencode($search_keyword) . '&page=' . $total_pages . '">' . $total_pages . '</a></li>';
+                }
+
+                // Nút "Sau"
+                if ($page < $total_pages) {
+                    echo '<li class="page-item"><a class="page-link" href="website-tron-goi.php?search=' . urlencode($search_keyword) . '&page=' . ($page + 1) . '">Sau</a></li>';
+                }
+                ?>
+            </ul>
+        </div>
     </div>
-  </section>
-  <!--//website_tron_goi-6-->
+</section>
+<!-- /service 6 -->
 
   <!-- footer -->
   <?php

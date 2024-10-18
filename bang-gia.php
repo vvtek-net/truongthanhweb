@@ -14,6 +14,8 @@ Author URL: http://w3layouts.com
   <title>Báo Giá - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <!-- Thêm favicon -->
+    <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- theme icon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/themify-icons@0.1.2/css/themify-icons.css">
@@ -136,7 +138,7 @@ Author URL: http://w3layouts.com
                       </div>
                       <div class="pricing-plan-price">
                         <div class="price">
-                          <span class="cost">2.388.000</span>
+                          <span class="cost">2.188.000</span>
                           <span class="period">₫/năm</span>
                         </div>
                       </div>
@@ -149,7 +151,7 @@ Author URL: http://w3layouts.com
                       </div>
                       <div class="pricing-plan-price">
                         <div class="price">
-                          <span class="cost">3.588.000</span>
+                          <span class="cost">3.188.000</span>
                           <span class="period">₫/năm</span>
                         </div>
                       </div>
@@ -299,7 +301,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Chứng chỉ bảo mật SSL <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS hỗ trợ cài đặt SSL miễn phí được chứng thực bởi tổ chức Let’s Encrypt. Website có bảo mật bằng chứng thư số (SSL) sẽ có biểu tượng https://, điều đó giúp cho khách hàng tin tưởng doanh nghiệp của bạn hơn.</li>
+                          <li>Trường Thành Web hỗ trợ cài đặt SSL miễn phí được chứng thực bởi tổ chức Let’s Encrypt. Website có bảo mật bằng chứng thư số (SSL) sẽ có biểu tượng https://, điều đó giúp cho khách hàng tin tưởng doanh nghiệp của bạn hơn.</li>
                         </ul>
                       </div>
                     </div>
@@ -369,10 +371,10 @@ Author URL: http://w3layouts.com
                   </div>
                   <div class="row row-pricing_general_infor row-12">
                     <div class="col-3 col-title-pricing">
-                      <div class="content-pricing">Bỏ bản quyền Mắt Bão WS <span class="dropdown"></span></div>
+                      <div class="content-pricing">Bỏ bản quyền Chân Trang <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Xóa bản quyền Mắt Bão WS dưới chân trang.</li>
+                          <li>Xóa bản quyền dưới chân trang.</li>
                         </ul>
                       </div>
                     </div>
@@ -628,7 +630,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Kết nối pinglist độc quyền <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS sẽ kết nối website của bạn với Pinglist độc quyền, cho phép website của bạn tự động thông báo cho các công cụ tìm kiếm rằng nội dung website của bạn đã được cập nhật</li>
+                          <li>Trường Thành Web sẽ kết nối website của bạn với Pinglist độc quyền, cho phép website của bạn tự động thông báo cho các công cụ tìm kiếm rằng nội dung website của bạn đã được cập nhật</li>
                         </ul>
                       </div>
                     </div>
@@ -666,7 +668,7 @@ Author URL: http://w3layouts.com
                       <div class="info-pricing">
                         <ul>
                           <li>Giúp bạn kiểm tra lập chỉ mục và tối ưu hóa khả năng hiển thị trên công cụ tìm kiếm Google.</li>
-                          <li>Đối với 2 gói <strong>Cơ bản</strong> và <strong>Tiêu chuẩn</strong>, bạn cần phải khai báo với Google và gửi mã nhúng để Mắt Bão WS hỗ trợ hoặc bạn có thể tự nhúng mã trong giao diện quản trị website của bạn.</li>
+                          <li>Đối với 2 gói <strong>Cơ bản</strong> và <strong>Tiêu chuẩn</strong>, bạn cần phải khai báo với Google và gửi mã nhúng để Trường Thành Web hỗ trợ hoặc bạn có thể tự nhúng mã trong giao diện quản trị website của bạn.</li>
                         </ul>
                       </div>
                     </div>
@@ -759,21 +761,21 @@ Author URL: http://w3layouts.com
                       <div class="col-3 col-support col-plan-savings">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=co-ban" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-3 col-support col-plan-basic">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=tieu-chuan" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-3 col-support col-plan-business">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=cao-cap" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
@@ -930,7 +932,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Nhập liệu nội dung <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>ĐVT: Đơn vị tin, là số lượng tin tức, sản phẩm, tin tuyển dụng,… tối đa Mắt Bão WS hỗ trợ bạn nhập liệu vào website của bạn, bao gồm nhập liệu nội dung, chỉnh sửa hình ảnh.</li>
+                          <li>ĐVT: Đơn vị tin, là số lượng tin tức, sản phẩm, tin tuyển dụng,… tối đa Trường Thành Web hỗ trợ bạn nhập liệu vào website của bạn, bao gồm nhập liệu nội dung, chỉnh sửa hình ảnh.</li>
                           <li>Xem chính sách hoàn thiện nội dung&nbsp;<a style="text-decoration: underline;" href="https://www.matbao.ws/chinh-sach-ho-tro-hoan-thien-noi-dung" target="_blank" rel="noopener">tại đây</a>.</li>
                         </ul>
                       </div>
@@ -947,8 +949,8 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Thời gian nhập liệu <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Thời gian tối đa bạn cung cấp nội dung để Mắt Bão WS nhập liệu vào website được tính từ thời gian bạn cung cấp nội dung hoàn thiện cho Mắt Bão WS.</li>
-                          <li>Mắt Bão WS sẽ hướng dẫn bạn cách phân loại nội dung cần nhập liệu để Mắt Bão WS có thể hoàn thiện website nhanh chóng và chính xác nhất. Qua đó, đẩy nhanh tiến độ hoàn thiện website để bạn tập trung vào kinh doanh Online hiệu quả.</li>
+                          <li>Thời gian tối đa bạn cung cấp nội dung để Trường Thành Web nhập liệu vào website được tính từ thời gian bạn cung cấp nội dung hoàn thiện cho Trường Thành Web.</li>
+                          <li>Trường Thành Web sẽ hướng dẫn bạn cách phân loại nội dung cần nhập liệu để Trường Thành Web có thể hoàn thiện website nhanh chóng và chính xác nhất. Qua đó, đẩy nhanh tiến độ hoàn thiện website để bạn tập trung vào kinh doanh Online hiệu quả.</li>
                           <li>Xem thêm: <a style="text-decoration: underline;" href="https://wiki.matbao.ws/tai-lieu/huong-dan-chuan-bi-du-lieu-hoan-thien-website" target="_blank" rel="noopener">Hướng dẫn chuẩn bị dữ liệu hoàn thiện website.</a></li>
                         </ul>
                       </div>
@@ -965,7 +967,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Thiết kế banner <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Số lượng ảnh Banner tối đa Mắt Bão WS thiết kế và hỗ trợ đưa lên website của bạn.</li>
+                          <li>Số lượng ảnh Banner tối đa Trường Thành Web thiết kế và hỗ trợ đưa lên website của bạn.</li>
                         </ul>
                       </div>
                     </div>
@@ -981,7 +983,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Thay đổi màu sắc, kiểu chữ <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Số lần tối đa Mắt Bão WS hỗ trợ thay đổi màu sắc, kiểu chữ trên website theo yêu cầu của bạn.</li>
+                          <li>Số lần tối đa Trường Thành Web hỗ trợ thay đổi màu sắc, kiểu chữ trên website theo yêu cầu của bạn.</li>
                         </ul>
                       </div>
                     </div>
@@ -997,9 +999,9 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Thay đổi trang bố cục <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Số lần tối đa Mắt Bão WS hỗ trợ thay đổi bố cục giao diện website theo yêu cầu của bạn.</li>
-                          <li>Mắt Bão WS chỉ hỗ trợ thay đổi hoặc bổ sung bố cục dựa trên các bố cục có sẵn trên mẫu giao diện bạn chọn.</li>
-                          <li>Mắt Bão WS chỉ hỗ trợ thay đổi bố cục trên 1 trang mà bạn chọn, ví dụ: Trang chủ, giới thiệu, dịch vụ, liên hệ,…</li>
+                          <li>Số lần tối đa Trường Thành Web hỗ trợ thay đổi bố cục giao diện website theo yêu cầu của bạn.</li>
+                          <li>Trường Thành Web chỉ hỗ trợ thay đổi hoặc bổ sung bố cục dựa trên các bố cục có sẵn trên mẫu giao diện bạn chọn.</li>
+                          <li>Trường Thành Web chỉ hỗ trợ thay đổi bố cục trên 1 trang mà bạn chọn, ví dụ: Trang chủ, giới thiệu, dịch vụ, liên hệ,…</li>
                         </ul>
                       </div>
                     </div>
@@ -1020,7 +1022,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Thay đổi kích thước ảnh <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS giúp bạn thay đổi kích thước hình ảnh để phù hợp với giao diện website.</li>
+                          <li>Trường Thành Web giúp bạn thay đổi kích thước hình ảnh để phù hợp với giao diện website.</li>
                         </ul>
                       </div>
                     </div>
@@ -1039,7 +1041,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Tăng chất lượng ảnh <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS giúp bạn tăng chất lượng ảnh từ độ phân giải thấp lên độ phân giải cao và sắc nét hơn.</li>
+                          <li>Trường Thành Web giúp bạn tăng chất lượng ảnh từ độ phân giải thấp lên độ phân giải cao và sắc nét hơn.</li>
                         </ul>
                       </div>
                     </div>
@@ -1058,7 +1060,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Chỉnh hiệu ứng ánh sáng <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS giúp bạn điều chỉnh hiệu ứng ánh sáng, màu sắc của hình ảnh theo yêu cầu của bạn.</li>
+                          <li>Trường Thành Web giúp bạn điều chỉnh hiệu ứng ánh sáng, màu sắc của hình ảnh theo yêu cầu của bạn.</li>
                         </ul>
                       </div>
                     </div>
@@ -1076,7 +1078,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Cắt nền ảnh <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS giúp bạn cắt bỏ nền và giữ lại ảnh chính dưới định dạng ảnh .PNG, phù hợp cho hỉnh ảnh sản phẩm.</li>
+                          <li>Trường Thành Web giúp bạn cắt bỏ nền và giữ lại ảnh chính dưới định dạng ảnh .PNG, phù hợp cho hỉnh ảnh sản phẩm.</li>
                         </ul>
                       </div>
                     </div>
@@ -1094,7 +1096,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Chèn logo vào ảnh <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS chèn Logo của bạn vào hình ảnh giúp bạn dễ dàng quảng bá thương hiệu hơn.</li>
+                          <li>Trường Thành Web chèn Logo của bạn vào hình ảnh giúp bạn dễ dàng quảng bá thương hiệu hơn.</li>
                         </ul>
                       </div>
                     </div>
@@ -1112,8 +1114,8 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Tìm kiếm hình ảnh <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS sẽ hỗ trợ bạn tìm kiếm hình ảnh theo yêu cầu của bạn để đưa lên website.</li>
-                          <li>Các hình ảnh Mắt Bão WS tìm kiếm giúp bạn từ các nguồn không bị đánh giá bản quyền như: Freepik, Envato,..</li>
+                          <li>Trường Thành Web sẽ hỗ trợ bạn tìm kiếm hình ảnh theo yêu cầu của bạn để đưa lên website.</li>
+                          <li>Các hình ảnh Trường Thành Web tìm kiếm giúp bạn từ các nguồn không bị đánh giá bản quyền như: Freepik, Envato,..</li>
                         </ul>
                       </div>
                     </div>
@@ -1152,7 +1154,7 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Đăng nội dung lên website <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS hỗ trợ đăng nội dung sáng tạo lên website của bạn.</li>
+                          <li>Trường Thành Web hỗ trợ đăng nội dung sáng tạo lên website của bạn.</li>
                         </ul>
                       </div>
                     </div>
@@ -1202,8 +1204,8 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Chia sẻ màn hình <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Mắt Bão WS dùng công cụ <a href="https://www.ultraviewer.net/vi/download.html" target="_blank" rel="noopener">UltraViewer</a> để chia sẻ màn hình khi trao đổi làm việc với bạn, qua đó giúp bạn nắm bắt vấn đề nhanh chóng hơn.</li>
-                          <li>Mắt Bão WS sẽ ghi lại màn hình khi làm việc với bạn để làm tài liệu trong thời gian triển khai dự án.</li>
+                          <li>Trường Thành Web dùng công cụ <a href="https://www.ultraviewer.net/vi/download.html" target="_blank" rel="noopener">UltraViewer</a> để chia sẻ màn hình khi trao đổi làm việc với bạn, qua đó giúp bạn nắm bắt vấn đề nhanh chóng hơn.</li>
+                          <li>Trường Thành Web sẽ ghi lại màn hình khi làm việc với bạn để làm tài liệu trong thời gian triển khai dự án.</li>
                         </ul>
                       </div>
                     </div>
@@ -1222,8 +1224,8 @@ Author URL: http://w3layouts.com
                       <div class="content-pricing">Zalo chat <span class="dropdown"></span></div>
                       <div class="info-pricing">
                         <ul>
-                          <li>Đối với gói hoàn thiện khả dụng, kỹ thuật Mắt Bão WS sẽ trao đổi trực tiếp với bạn qua kênh Zalo để thu thập thông tin cũng như phản hồi các kết quả, đồng thời sẽ ghi lại lịch sử quá trình làm việc qua email.</li>
-                          <li>Sau khi hoàn tất dự án, Mắt Bão WS sẽ thoát nhóm Zalo và tiếp tục hỗ trợ kỹ thuật thông qua email <a href="mailto:support@matbao.ws">support@matbao.ws</a> và Hotline <a href="tel:02877777999">(028) 7777 7999</a>.</li>
+                          <li>Đối với gói hoàn thiện khả dụng, kỹ thuật Trường Thành Web sẽ trao đổi trực tiếp với bạn qua kênh Zalo để thu thập thông tin cũng như phản hồi các kết quả, đồng thời sẽ ghi lại lịch sử quá trình làm việc qua email.</li>
+                          <li>Sau khi hoàn tất dự án, Trường Thành Web sẽ thoát nhóm Zalo và tiếp tục hỗ trợ kỹ thuật thông qua email <a href="mailto:website.truongthanh@gmail.com">website.truongthanh@gmail.com</a> và Hotline <a href="tel:(+84) 328 501 599">(+84) 328 501 599</a>.</li>
                         </ul>
                       </div>
                     </div>
@@ -1241,21 +1243,21 @@ Author URL: http://w3layouts.com
                       <div class="col-3 col-support col-plan-savings">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=co-ban" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-3 col-support col-plan-basic">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=tieu-chuan" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
                       <div class="col-3 col-support col-plan-business">
                         <div class="pricing-price">
                           <div class="buy-button">
-                            <a href="#form-register" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
+                            <a href="lien-he.php?service_package=cao-cap" title="Đăng ký ngay" class="btn btn-primary">Đăng ký ngay</a>
                           </div>
                         </div>
                       </div>
@@ -1282,52 +1284,6 @@ Author URL: http://w3layouts.com
   include('includes/footer.php');
   ?>
   <!-- //footer -->
-
-  <!-- copyright -->
-  <section class="w3l-copyright">
-    <div class="container">
-      <div class="row bottom-copies">
-        <p class="col-lg-8 copy-footer-29">© 2021 Medick. All rights reserved. Design by <a
-            href="https://w3layouts.com/" target="_blank">
-            W3Layouts</a></p>
-
-        <div class="col-lg-4 main-social-footer-29">
-          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-      &#10548;
-    </button>
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction()
-      };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- /move top -->
-  </section>
-  <!-- //copyright -->
   <!--//footer-->
   <!-- Template JavaScript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>

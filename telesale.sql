@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 17, 2024 lúc 08:28 PM
+-- Thời gian đã tạo: Th10 18, 2024 lúc 12:26 PM
 -- Phiên bản máy phục vụ: 10.4.25-MariaDB
 -- Phiên bản PHP: 7.4.30
 
@@ -661,7 +661,37 @@ INSERT INTO `customers` (`id`, `customer_name`, `phone_number`, `created_by`, `c
 (632, 'trần tiến duy', '0983397353', 'Doãn Đức Thuận', '2024-10-17 10:00:39', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
 (633, 'duy', '0376764077', 'Doãn Đức Thuận', '2024-10-17 10:01:37', 'Ucall (Lead)', 'Không nghe máy', 'Chưa có đánh giá'),
 (634, 'quốc bình', '0967210678', 'Doãn Đức Thuận', '2024-10-17 10:04:06', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
-(635, 'vương', ' 0964599799', 'Doãn Đức Thuận', '2024-10-17 10:18:06', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá');
+(635, 'vương', ' 0964599799', 'Doãn Đức Thuận', '2024-10-17 10:18:06', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
+(637, 'đặng ngọc khánh', '0983265540', 'Doãn Đức Thuận', '2024-10-18 02:32:36', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Khách hàng mới tiếp xúc'),
+(638, 'trung tín', '0332190458', 'Doãn Đức Thuận', '2024-10-18 03:13:47', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(639, 'anh minh', '0326154356', 'Doãn Đức Thuận', '2024-10-18 03:14:11', 'Ucall (Lead)', 'Không nghe máy', 'Chưa có đánh giá'),
+(640, '0983265540', 'đặng ngọc khánh', 'Doãn Đức Thuận', '2024-10-18 03:14:45', 'Ucall (Lead)', 'Đã gọi và gửi mail', 'Khách hàng mới tiếp xúc'),
+(641, 'nguyễn đức hiếu', '0961101427', 'Doãn Đức Thuận', '2024-10-18 03:37:26', 'Tự tìm kiếm', 'Đã gọi và gửi mail', 'Chưa có đánh giá'),
+(642, 'nguyễn hồng quân ', '0903313357', 'Doãn Đức Thuận', '2024-10-18 03:42:37', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(646, 'nguyễn văn lên', '0868337790', 'Doãn Đức Thuận', '2024-10-18 03:49:14', 'Tự tìm kiếm', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
+(647, 'đức anh', '0937905568', 'Doãn Đức Thuận', '2024-10-18 03:51:20', 'Tự tìm kiếm', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
+(648, 'điện dân dụng', '0984127785', 'Doãn Đức Thuận', '2024-10-18 03:52:47', 'Tự tìm kiếm', 'Không nghe máy', 'Chưa có đánh giá'),
+(649, 'a Hoàng ', '0973591709', 'Doãn Đức Thuận', '2024-10-18 04:17:22', 'Tự tìm kiếm', 'Không nghe máy', 'Chưa có đánh giá'),
+(650, 'Lan Anh', '0703268839', 'Doãn Đức Thuận', '2024-10-18 04:18:35', 'Tự tìm kiếm', 'Không nghe máy', 'Chưa có đánh giá'),
+(651, 'ngọc tân', '0904867912', 'Doãn Đức Thuận', '2024-10-18 04:30:54', 'Tự tìm kiếm', 'Đang tư vấn', 'Khách hàng mới tiếp xúc'),
+(652, 'ngọc tân', '0947755991', 'Doãn Đức Thuận', '2024-10-18 08:12:06', 'Tự tìm kiếm', 'Không nghe máy', 'Chưa có đánh giá'),
+(653, 'shop hoa', '0583593086', 'Doãn Đức Thuận', '2024-10-18 08:13:38', 'Tự tìm kiếm', 'Không nghe máy', 'Chưa có đánh giá'),
+(654, 'nguyễn kiều', '0935498333', 'Doãn Đức Thuận', '2024-10-18 09:04:11', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(655, 'phụng hoàng', '0368928709', 'Doãn Đức Thuận', '2024-10-18 09:07:51', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(656, 'dsnake', '0935555106', 'Doãn Đức Thuận', '2024-10-18 09:09:38', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(657, 'Huấn', '0934711719', 'Doãn Đức Thuận', '2024-10-18 09:11:53', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(658, 'đỗ tuấn', '0972864701', 'Doãn Đức Thuận', '2024-10-18 09:13:37', 'Ucall (Lead)', 'Đã gọi và gửi mail', 'Chưa có đánh giá'),
+(659, 'nhung', '0347071668', 'Doãn Đức Thuận', '2024-10-18 09:15:50', 'Ucall (Lead)', 'Không nghe máy', 'Chưa có đánh giá'),
+(660, 'trương hải lưu', '0902901486', 'Doãn Đức Thuận', '2024-10-18 09:17:11', 'Ucall (Lead)', 'Đã gọi và gửi mail', 'Chưa có đánh giá'),
+(661, 'mr long', '0973030063', 'Doãn Đức Thuận', '2024-10-18 09:21:15', 'Ucall (Lead)', 'Đã gọi và gửi mail', 'Chưa có đánh giá'),
+(662, 'trần cẩm nhi ( kho hạt )', '0989981479', 'Doãn Đức Thuận', '2024-10-18 09:23:24', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
+(663, 'thanh gd', '0366836625', 'Doãn Đức Thuận', '2024-10-18 09:24:53', 'Ucall (Lead)', 'Thuê bao/Nhầm số', 'Chưa có đánh giá'),
+(664, 'thanh sơn', '0906665868', 'Doãn Đức Thuận', '2024-10-18 09:26:39', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(665, 'an', '0906733250', 'Doãn Đức Thuận', '2024-10-18 09:28:33', 'Ucall (Lead)', 'KH Đã có web', 'Chưa có đánh giá'),
+(666, 'khánh lead', '0905038603', 'Doãn Đức Thuận', '2024-10-18 09:57:53', 'Ucall (Lead)', 'Không nhu cầu', 'Chưa có đánh giá'),
+(667, 'xuân thịnh', '0946827186', 'Doãn Đức Thuận', '2024-10-18 10:00:00', 'Ucall (Lead)', 'Đã gọi và gửi mail', 'Chưa có đánh giá'),
+(675, 'Trần Tuấn Anh', '0374 562 519', 'Doãn Đức Thuận', '2024-10-18 10:13:48', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá'),
+(685, 'lê chung', '0963361331', 'Doãn Đức Thuận', '2024-10-18 10:21:43', 'Ucall (Lead)', 'Đang cân nhắc suy nghĩ', 'Chưa có đánh giá');
 
 -- --------------------------------------------------------
 
@@ -874,66 +904,44 @@ CREATE TABLE `website_templates` (
 
 INSERT INTO `website_templates` (`id`, `url`, `title`, `image_url`, `price`) VALUES
 (11, 'https://6.congtyannhien.com/', 'ĐÔNG Y', 'assets/img/dong-y.png', 4000000),
-(12, 'https://7.congtyannhien.com/', 'SHOP 18+', 'assets/img/shop-18+.png', 4000000),
 (13, 'https://8.congtyannhien.com/', 'VIET CERAMIC', 'assets/img/vietceramics.png', 9988000),
 (14, 'https://9.congtyannhien.com/', 'SHOP BÁN HÀNG', 'assets/img/shop-ban-hang.png', 4000000),
 (15, 'https://10.congtyannhien.com/', 'ĐỒ GIA DỤNG', 'assets/img/do-gia-dung.png', 4000000),
-(16, 'https://11.congtyannhien.com/', 'ĐỒ GIA DỤNG 2', 'assets/img/do-gia-dung-2.png', 4000000),
 (17, 'https://12.congtyannhien.com/', 'SHOPEE ', 'assets/img/shopee.png', 4000000),
 (18, 'https://13.congtyannhien.com/', 'SHOP LÀM BÁNH', 'assets/img/shop-lam-banh.png', 4000000),
-(19, 'https://14.congtyannhien.com/', 'BÁN SÁCH', 'assets/img/ban-sach.png', 4000000),
 (20, 'https://15.congtyannhien.com/', 'NHÀ HÀNG NƯỚNG', 'assets/img/nha-hang-nuong.png', 4000000),
-(21, 'https://16.congtyannhien.com/', 'BẤT ĐỘNG SẢN ', 'assets/img/bat-dong-san.png', 4000000),
-(22, 'https://17.congtyannhien.com/', 'BẤT ĐỘNG SẢN 2 ', 'assets/img/bat-dong-san-2.png', 4000000),
 (23, 'https://18.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY ', 'assets/img/gioi-thieu-cong-ty.png', 4000000),
 (24, 'https://19.congtyannhien.com/', 'BẤT ĐỘNG SẢN 3', 'assets/img/bat-dong-san-3.png', 4000000),
-(25, 'https://20.congtyannhien.com/', 'BẤT ĐỘNG SẢN VIN', 'assets/img/bat-dong-san-vin.png', 4000000),
 (26, 'https://21.congtyannhien.com/', 'BẤT ĐỘNG SẢN 4', 'assets/img/bat-dong-san-4.png', 4000000),
 (27, 'https://22.congtyannhien.com/', 'BẤT ĐỘNG SẢN 5', 'assets/img/bat-dong-san-5.png', 4000000),
 (28, 'https://23.congtyannhien.com/', 'BẤT ĐỘNG SẢN 6', 'assets/img/bat-dong-san-6.png', 4000000),
-(29, 'https://24.congtyannhien.com/', 'BẤT ĐỘNG SẢN 7', 'assets/img/bat-dong-san-7.png', 4000000),
 (30, 'https://25.congtyannhien.com/', 'BẤT ĐỘNG SẢN 8', 'assets/img/bat-dong-san-8.png', 4000000),
-(31, 'https://26.congtyannhien.com/', 'BẤT ĐỘNG SẢN 9', NULL, 4000000),
-(32, 'https://27.congtyannhien.com/', 'BẤT ĐỘNG SẢN 10', NULL, 4000000),
-(33, 'https://28.congtyannhien.com/', 'BẤT ĐỘNG SẢN 11', NULL, 4000000),
-(34, 'https://29.congtyannhien.com/', 'BẤT ĐỘNG SẢN 12', NULL, 4000000),
-(35, 'https://30.congtyannhien.com/', 'BẤT ĐỘNG SẢN 13', NULL, 4000000),
-(36, 'https://31.congtyannhien.com/', 'BẤT ĐỘNG SẢN 14', NULL, 4000000),
-(37, 'https://32.congtyannhien.com/', 'BẤT ĐỘNG SẢN 15', NULL, 4000000),
-(38, 'https://33.congtyannhien.com/', 'BẤT ĐỘNG SẢN 16', NULL, 4000000),
-(39, 'https://34.congtyannhien.com/', 'BẤT ĐỘNG SẢN 17', NULL, 4000000),
-(40, 'https://35.congtyannhien.com/', 'BẤT ĐỘNG SẢN 18', NULL, 4000000),
-(41, 'https://36.congtyannhien.com/', 'BẤT ĐỘNG SẢN 19', NULL, 4000000),
-(42, 'https://37.congtyannhien.com/', 'BẤT ĐỘNG SẢN 20', NULL, 4000000),
-(43, 'https://38.congtyannhien.com/', 'BẤT ĐỘNG SẢN 21', NULL, 4000000),
-(44, 'https://39.congtyannhien.com/', 'BẤT ĐỘNG SẢN 22', NULL, 4000000),
-(45, 'https://40.congtyannhien.com/', 'BẤT ĐỘNG SẢN 23', NULL, 4000000),
-(46, 'https://41.congtyannhien.com/', 'BẤT ĐỘNG SẢN 24', NULL, 4000000),
-(47, 'https://42.congtyannhien.com/', 'BẤT ĐỘNG SẢN 25', NULL, 4000000),
-(48, 'https://43.congtyannhien.com/', 'BẤT ĐỘNG SẢN 26', NULL, 4000000),
-(49, 'https://44.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY 2', NULL, 4000000),
-(50, 'https://45.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY 3', NULL, 4000000),
-(51, 'https://46.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY 4', NULL, 4000000),
-(52, 'https://47.congtyannhien.com/', 'BẤT ĐỘNG SẢN 27', NULL, 4000000),
-(53, 'https://48.congtyannhien.com/', 'BẤT ĐỘNG SẢN 28', NULL, 4000000),
-(54, 'https://49.congtyannhien.com/', 'THIẾT KẾ THẺ, BIỂN TÊN ', NULL, 4000000),
-(55, 'https://50.congtyannhien.com/', 'BÁN TOUR', NULL, 4000000),
-(56, 'https://51.congtyannhien.com/', 'BỌC GHẾ SOFA', NULL, 4000000),
-(57, 'https://52.congtyannhien.com/', 'BÁN CAMERA, MÀN HÌNH', NULL, 4000000),
-(58, 'https://53.congtyannhien.com/', 'BÁN CAMERA, MÀN HÌNH 2', NULL, 4000000),
-(59, 'https://54.congtyannhien.com/', 'BÁN CAFE', NULL, 4000000),
-(60, 'https://55.congtyannhien.com/', 'BÁN CÂY XANH ', NULL, 4000000),
-(61, 'https://56.congtyannhien.com/', 'SƠN CHỐNG THẤM ', NULL, 4000000),
-(62, 'https://57.congtyannhien.com/', 'BÁN PHẦN MỀM ', NULL, 4000000),
-(63, 'https://58.congtyannhien.com/', 'VẬN CHUYỂN, CHUYỂN NHÀ', NULL, 4000000),
-(64, 'https://59.congtyannhien.com/', 'BÁN THUỐC ', NULL, 4000000),
-(65, 'https://60.congtyannhien.com/', 'WEB LÀM QR CODE', NULL, 4000000),
-(66, 'https://61.congtyannhien.com', 'TÀI CHÍNH COIN', NULL, 4000000),
-(67, 'https://62.congtyannhien.com/', 'DU HỌC XKLĐ', NULL, 4000000),
-(68, 'https://63.congtyannhien.com/', 'BÁN MÁY HÀN QUANG', NULL, 4000000),
-(69, 'https://64.congtyannhien.com/', 'CTY PHẦN MỀM KẾ TOÁN', NULL, 4000000),
-(70, 'https://65.congtyannhien.com/', 'CTY PHÂN BÓN ', NULL, 4000000),
-(71, 'https://66.congtyannhien.com/', 'CTY PHẦN MỀM ', NULL, 4000000),
+(35, 'https://30.congtyannhien.com/', 'BẤT ĐỘNG SẢN 13', 'assets/img/bat-dong-san-13.png', 4000000),
+(36, 'https://31.congtyannhien.com/', 'BẤT ĐỘNG SẢN 14', 'assets/img/bat-dong-san-14.png', 4000000),
+(40, 'https://35.congtyannhien.com/', 'BẤT ĐỘNG SẢN 18', 'assets/img/bat-dong-san-18.png', 4000000),
+(41, 'https://36.congtyannhien.com/', 'BẤT ĐỘNG SẢN 19', 'assets/img/bat-dong-san-19.png', 4000000),
+(42, 'https://37.congtyannhien.com/', 'BẤT ĐỘNG SẢN 20', 'assets/img/bat-dong-san-20.png', 4000000),
+(43, 'https://38.congtyannhien.com/', 'BẤT ĐỘNG SẢN 21', 'assets/img/bat-dong-san-21.png', 4000000),
+(44, 'https://39.congtyannhien.com/', 'BẤT ĐỘNG SẢN 22', 'assets/img/bat-dong-san-22.png', 4000000),
+(45, 'https://40.congtyannhien.com/', 'BẤT ĐỘNG SẢN 23', 'assets/img/bat-dong-san-23.png', 4000000),
+(46, 'https://41.congtyannhien.com/', 'BẤT ĐỘNG SẢN 24', 'assets/img/bat-dong-san-24.png', 4000000),
+(47, 'https://42.congtyannhien.com/', 'BẤT ĐỘNG SẢN 25', 'assets/img/bat-dong-san-25.png', 4000000),
+(48, 'https://43.congtyannhien.com/', 'BẤT ĐỘNG SẢN 26', 'assets/img/bat-dong-san-26.png', 4000000),
+(49, 'https://44.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY 2', 'assets/img/gioi-thieu-cong-ty-2.png', 4000000),
+(51, 'https://46.congtyannhien.com/', 'GIỚI THIỆU CÔNG TY 4', 'assets/img/gioi-thieu-cong-ty-4.png', 4000000),
+(52, 'https://47.congtyannhien.com/', 'BẤT ĐỘNG SẢN 27', 'assets/img/bat-dong-san-27.png', 4000000),
+(53, 'https://48.congtyannhien.com/', 'BẤT ĐỘNG SẢN 28', 'assets/img/bat-dong-san-28.png', 4000000),
+(55, 'https://50.congtyannhien.com/', 'BÁN TOUR', 'assets/img/ban-tour.png', 4000000),
+(56, 'https://51.congtyannhien.com/', 'BỌC GHẾ SOFA', 'assets/img/boc-ghe-sofa.png', 4000000),
+(57, 'https://52.congtyannhien.com/', 'BÁN CAMERA, MÀN HÌNH', 'assets/img/camera-1.png', 4000000),
+(59, 'https://54.congtyannhien.com/', 'BÁN CAFE', 'assets/img/cafe-1.png', 4000000),
+(60, 'https://55.congtyannhien.com/', 'BÁN CÂY XANH ', 'assets/img/ban-cay-xanh.png', 4000000),
+(61, 'https://56.congtyannhien.com/', 'SƠN CHỐNG THẤM ', 'assets/img/son-chong-tham.png', 4000000),
+(63, 'https://58.congtyannhien.com/', 'VẬN CHUYỂN, CHUYỂN NHÀ', 'assets/img/van-chuyen-nha.png', 4000000),
+(67, 'https://62.congtyannhien.com/', 'DU HỌC XKLĐ', 'assets/img/xkld.png', 4000000),
+(68, 'https://63.congtyannhien.com/', 'BÁN MÁY HÀN QUANG', 'assets/img/may-han-quang.png', 4000000),
+(69, 'https://64.congtyannhien.com/', 'CTY PHẦN MỀM KẾ TOÁN', 'assets/img/pm-ke-toan.png', 4000000),
+(70, 'https://65.congtyannhien.com/', 'CTY PHÂN BÓN ', 'assets/img/camera-cty-phan-bon.png', 4000000),
 (72, 'https://67.congtyannhien.com/', 'NỘI THẤT ', NULL, 4000000),
 (73, 'https://68.congtyannhien.com/', 'DU HỌC XKLĐ 2 ', NULL, 4000000),
 (74, 'https://69.congtyannhien.com/', 'VISA', NULL, 4000000),
@@ -1193,7 +1201,8 @@ INSERT INTO `website_templates` (`id`, `url`, `title`, `image_url`, `price`) VAL
 (328, 'https://324.congtyannhien.com/', 'XÂY DỰNG', NULL, 4000000),
 (329, 'https://328.congtyannhien.com/', 'BÁN ĐIỆN THOẠI ', NULL, 4000000),
 (330, 'https://329.congtyannhien.com/', 'THIẾT KẾ, MARKETING', NULL, 4000000),
-(331, 'https://12.congtyannhien.com/', 'SHOPEE ', 'assets/img/shopee.png', 4000000);
+(331, 'https://12.congtyannhien.com/', 'SHOPEE ', 'assets/img/shopee.png', 4000000),
+(332, '', '', NULL, 4000000);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -1289,7 +1298,7 @@ ALTER TABLE `contact_statuses`
 -- AUTO_INCREMENT cho bảng `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=637;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=686;
 
 --
 -- AUTO_INCREMENT cho bảng `customer_evaluations`
@@ -1337,7 +1346,7 @@ ALTER TABLE `ticket_types`
 -- AUTO_INCREMENT cho bảng `website_templates`
 --
 ALTER TABLE `website_templates`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=332;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=333;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

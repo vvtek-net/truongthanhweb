@@ -6,7 +6,7 @@
             <div class="footer-logo mb-3">
               <a class="navbar-brand" href="index.html">TRƯỜNG THÀNH WEB</a>
             </div>
-            <p>CÔNG TY TNHH KINH DOANH TỔNG HỢP VÀ XUẤT NHẬP KHẨU TRƯỜNG THÀNH.</p>
+            <p>TRUONG THANH GENERAL TRADING AND IMPORT EXPORT COMPANY LIMITED.</p>
             <ul class="mt-3">
               <li><a href="tel:++(84) 328 501 599"><span class="fa fa-phone"></span> +(84) 328 501 599</a></li>
               <li><a href="mailto:website.truongthanh@gmail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
@@ -18,7 +18,7 @@
             <ul>
               <li><a href="#Gioi-thieu.php">Giới Thiệu</a></li>
               <li><a href="#tin-tuc.php">Tin Tức</a></li>
-              <li><a href="#dich-vu.php">Departments</a></li>
+              <li><a href="#dich-vu.php">Dịch Vụ</a></li>
               <li><a href="#Tuyen-dung.php">Tuyển Dụng</a></li>
               <li><a href="#tai-lieu.php">Tài Liệu</a></li>
               <li><a href="lien-he.php">Liên Hệ</a></li>

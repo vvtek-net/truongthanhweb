@@ -14,6 +14,8 @@ Author URL: http://w3layouts.com
   <title>Liên Hệ - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <!-- Thêm favicon -->
+    <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <link rel="stylesheet" href="assets/css/body.css">

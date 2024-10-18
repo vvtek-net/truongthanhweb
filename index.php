@@ -11,6 +11,7 @@ Author URL: http://w3layouts.com
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
     content="Thiết Kế Website, thiết kế website, website trọn gói, thiết kế website trọn gói" />
+    <meta name="google-site-verification" content="lvz5b_pEG1Ec-ihwjG1Y27Lue4YPQECITkn6S_6w2-4" />
   <title>Trang Chủ - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -18,6 +19,8 @@ Author URL: http://w3layouts.com
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Thêm favicon -->
+  <link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/body.css">
   <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -214,8 +217,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url"><span style="color: #2caee2;">Website</span> Trọn Gói</a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>Việc có website sẽ trở nên dễ dàng khi có TruongThanhWeb đồng hành cùng bạn.</p>
               </div>
             </div>
             <div class="row content4-right-grids mb-sm-5 mb-4">
@@ -226,8 +228,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url"><span style="color: #2caee2;">Hosting</span> Chất Lượng Cao</a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>Với hệ thống hạ tầng hiện đại, TruongThanhWeb cam kết sẽ mang đến chất lượng dịch vụ hosting tốt nhất thị trường.</p>
               </div>
             </div>
             <div class="row content4-right-grids mb-sm-5 mb-4">
@@ -238,8 +239,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url">Sáng Tạo Nội Dung Chuẩn <span style="color: #2caee2;">SEO</span></a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>Nếu bạn bận, không có thời gian làm việc với website. Đã có TruongThanhWeb lo.</p>
               </div>
             </div>
           </div>
@@ -252,8 +252,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url">Thiết Kế Theo <span style="color: #2caee2;">Yêu Cầu</span></a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>TruongThanhWeb sẽ thiết kế website và đáp ứng mọi yêu cầu của bạn từ dễ tới khó.</p>
               </div>
             </div>
             <div class="row content4-right-grids mb-sm-5 mb-4">
@@ -264,8 +263,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url"> <span style="color: #2caee2;">Tên Miền</span> Chất Lượng</a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>TruongThanhWeb sẽ tặng bạn tên miền đẹp, chất lượng và thân thiện để bạn có thể bắt đầu công việc kinh doanh.</p>
               </div>
             </div>
             <div class="row content4-right-grids">
@@ -276,8 +274,7 @@ Author URL: http://w3layouts.com
               </div>
               <div class="col-lg-10 col-9 content4-right-info pl-4">
                 <h6><a href="#url">Chạy Quảng Cáo <span style="color: #2caee2;">Website</span></a></h6>
-                <p>Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
-                  adipisicing.</p>
+                <p>TruongThanhWeb sẽ giúp bạn chạy quảng cáo website của mình với chi phí tối ưu nhất.</p>
               </div>
             </div>
           </div>
@@ -320,7 +317,7 @@ Author URL: http://w3layouts.com
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="title-content text-center">
         <!-- <h6 class="title-subhny text-center">Latest News</h6> -->
-        <h3 class="title-w3l pb-sm-o pb-2 text-center">Mẫu Website</h3>
+        <h3 class="title-w3l pb-sm-o pb-2 text-center">Mẫu Website <span style="color:red">HOT</span></h3>
       </div>
       <div class="swiper-container">
         <div id="owl-demo1" class="wiper-wrapper d-flex owl-carousel">
@@ -329,7 +326,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                  <a href="https://giaodien.vvtek.net/giaodien/noithat1" class="d-block" target="_blank">
                     <img src="assets/images/g7.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -357,7 +354,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                  <a href="https://giaodien.vvtek.net/giaodien/giatla1" class="d-block" target="_blank">
                     <img src="assets/images/g5.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -385,7 +382,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                  <a href="https://giaodien.vvtek.net/giaodien/travel1" class="d-block" target="_blank">
                     <img src="assets/images/g3.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -413,7 +410,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                  <a href="#blog-single.html" class="d-block">
                     <img src="assets/images/g2.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -441,7 +438,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                <a href="https://giaodien.vvtek.net/giaodien/banhang1" class="d-block" target="_blank">
                     <img src="assets/images/g6.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -469,7 +466,7 @@ Author URL: http://w3layouts.com
             <div class="about-in blog-grid-info text-left mt-5 swiper-slide">
               <div class="card img">
                 <div class="card-body img">
-                  <a href="blog-single.html" class="d-block">
+                <a href="https://giaodien.vvtek.net/giaodien/phlox1" class="d-block" target="_blank">
                     <img src="assets/images/g4.jpg" alt="" class="img-fluid radius-image">
                   </a>
                   <div class="blog-des mt-4">
@@ -586,7 +583,7 @@ Author URL: http://w3layouts.com
 
                 </div>
                 <div class="appointment-btn text-lg-right">
-                  <button type="submit" class="btn btn-style btn-primary mt-4">Book Appointment</button>
+                  <button type="submit" class="btn btn-style btn-primary mt-4">Đăng Ký Nhận Tin</button>
                 </div>
               </form>
             </div>
@@ -611,7 +608,7 @@ Author URL: http://w3layouts.com
                 <blockquote>
                   <q>Đội ngũ làm việc tận tâm</q>
                 </blockquote>
-                <p>Tôi rất bất ngờ về việc dịch vụ của truongthanhweb làm rất tốt, tôi sẽ tiếp tục ủng hộ truongthanhweb trong tương lai. </p>
+                <p>Tôi rất bất ngờ về việc dịch vụ của truongthanhweb làm rất tốt. </p>
               </div>
               <div class="bottom-info mt-4">
                 <a class="comment-img" href="#url"><img src="assets/images/avt-vd.jpg" class="img-responsive"

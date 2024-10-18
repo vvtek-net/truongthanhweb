@@ -1,62 +1,102 @@
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-  /* Popup tìm kiếm */
-  .search-popup {
+ /* Popup tìm kiếm */
+.search-popup {
     display: none;
-    /* Ẩn popup mặc định */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    /* Màu nền tối */
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
+    transition: all 0.3s ease-in-out;
+}
 
-  /* Nội dung của popup */
-  .search-popup-content {
-    background-color: #fff;
+/* Nội dung của popup */
+.search-popup-content {
+    background-color: #f8f9fa;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     position: relative;
     width: 80%;
-    max-width: 400px;
-  }
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
 
-  /* Nút đóng */
-  .close-btn {
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nút đóng */
+.close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
-  }
+    color: #333;
+    transition: color 0.3s;
+}
 
-  /* Thiết kế form tìm kiếm */
-  .search-form input {
+.close-btn:hover {
+    color: #007bff;
+}
+
+/* Thiết kế form tìm kiếm */
+.search-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-form .btn {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+    border-radius: 30px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-  .search-form .btn {
-    width: 100%;
-  }
+.search-form .btn:hover {
+    background-color: #0056b3;
+}
 
-  /* Hiển thị popup khi cần */
-  .search-popup.show {
+/* Hiển thị popup khi cần */
+.search-popup.show {
     display: flex;
-  }
+}
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+/* Thiết kế icon tìm kiếm */
+.search-icon a {
+    color: #2caee2;
+    transition: color 0.3s;
+}
+
+.search-icon a:hover {
+    color: #2caee2;
+}
+
 </style>
 <?php
 // Lấy URI hiện tại
