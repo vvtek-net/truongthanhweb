@@ -10,7 +10,10 @@ Author URL: http://w3layouts.com
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
-    content="Medick Responsive web template, Bootstrap Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    content="Thiết Kế Website, thiết kế website, website trọn gói, thiết kế website trọn gói" />
+  <meta name="google-site-verification" content="lvz5b_pEG1Ec-ihwjG1Y27Lue4YPQECITkn6S_6w2-4" />
+  <meta name="description" content="TruongThanhWeb cung cấp dịch vụ thiết kế website chuyên nghiệp, chuẩn SEO và trọn gói, cùng với các giải pháp tối ưu hóa tốc độ và quản trị website, giúp doanh nghiệp tăng cường hiệu quả kinh doanh trực tuyến.">
+
   <title>Báo Giá - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -25,6 +28,11 @@ Author URL: http://w3layouts.com
   <link rel="stylesheet" href="assets/css/tags.css">
   <link rel="stylesheet" href="assets/css/body.css">
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica !important;
+    }
+  </style>
 </head>
 
 <body>

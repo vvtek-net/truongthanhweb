@@ -2,6 +2,11 @@
 * kk Star Ratings
 * @see https://github.com/kamalkhan/kk-star-ratings
 */
+
+body {
+    font-family: Arial, Helvetica;
+}
+
 .kk-star-ratings {
     display: -webkit-box;
     display: -webkit-flex;
@@ -19230,14 +19235,14 @@ form.submitting .wpcf7-spinner {
 }
 
 body {
-    font-family: "NotoSans",sans-serif;
+    font-family: Arial, Helvetica !important;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Roboto",sans-serif;
+    font-family: Arial, Helvetica !important;
     font-size: 35px;
     line-height: 1.2;
     font-weight: 500
@@ -19250,7 +19255,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #81b441;
+    background-color: #2caee2;
     background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
 }
 
@@ -19266,7 +19271,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 0;
     overflow: visible;
     line-height: 2.19 !important;
-    font-family: "Roboto",sans-serif;
+    font-family: Arial, Helvetica !important;
     font-size: 1rem;
     font-weight: 400 !important
 }
@@ -21868,7 +21873,7 @@ canvas {
 }
 
 #search-product .live-search-results .autocomplete-suggestions::-webkit-scrollbar-thumb {
-    background-color: #81b441;
+    background-color: #2caee2;
     background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.2) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.2) 50%,rgba(255,255,255,.2) 75%,transparent 75%,transparent)
 }
 

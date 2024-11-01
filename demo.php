@@ -36,11 +36,22 @@ $result = mysqli_query($conn, $sql);
             height: 100%;
             overflow: hidden;
             font-family: Arial, sans-serif;
+            background-color: gray;
         }
-        iframe {
-            border: none;
-            transition: all 0.5s ease;
-        }
+        .iframe-wrapper {
+            padding: 15px; /* Tạo khoảng cách 5px đều cho các cạnh */
+            background: #f0f0f0; /* Màu nền tùy chọn để nhìn thấy khoảng cách */
+            border-radius: 10px; /* Bo góc cho cả khung chứa */
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 5px; /* Bo góc bên trong */
+                transition: all 0.5s ease;
+            }
+
         #menu {
             position: fixed;
             top: 0;
@@ -88,7 +99,8 @@ $result = mysqli_query($conn, $sql);
             border-radius: 5px;
             text-decoration: none;
             font-size: 14px;
-            margin-left: 20px;
+            margin-left: 10px;
+            margin-right: 30px;
         }
         .btn-register:hover {
             background-color: #1b8eb8;
@@ -140,6 +152,7 @@ $result = mysqli_query($conn, $sql);
         <!-- Phân loại mẫu website -->
         <?php
         if (mysqli_num_rows($result) > 0) {
+            
             while ($row = mysqli_fetch_assoc($result)) {
                 // Hiển thị tiêu đề của mẫu website kèm phân loại
                 if ($row['price'] < 5000000) {
@@ -161,7 +174,7 @@ $result = mysqli_query($conn, $sql);
         <button onclick="setIframeSize('desktop')" title="Desktop"><i class="fas fa-desktop"></i></button>
         <span style="margin-left: 20px;">Mã giao diện: <?php echo $id; ?></span>
         <!-- Nút Đăng ký ngay -->
-        <a href="lien-he.php" class="btn-register">Đăng ký ngay</a>
+        <a href="lien-he.php?mau-web=<?php echo $id; ?>" class="btn-register">Đăng ký ngay</a>
     </div>
 </div>
 

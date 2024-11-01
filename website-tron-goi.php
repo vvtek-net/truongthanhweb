@@ -34,14 +34,17 @@ $result = mysqli_query($conn, $sql);
 ?>
 
 <!doctype html>
-<html lang="zxx">
+<html lang="vi">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
-    content="Medick Responsive web template, Bootstrap Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    content="Thiết Kế Website, thiết kế website, website trọn gói, thiết kế website trọn gói" />
+  <meta name="google-site-verification" content="lvz5b_pEG1Ec-ihwjG1Y27Lue4YPQECITkn6S_6w2-4" />
+  <meta name="description" content="TruongThanhWeb cung cấp dịch vụ thiết kế website chuyên nghiệp, chuẩn SEO và trọn gói, cùng với các giải pháp tối ưu hóa tốc độ và quản trị website, giúp doanh nghiệp tăng cường hiệu quả kinh doanh trực tuyến.">
+
   <title>Mẫu Web - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -161,9 +164,8 @@ $result = mysqli_query($conn, $sql);
             ?>
                     <div class="col-lg-4 col-md-6 grids-feature item-demo mt-4">
                         <div class="area-box icon-blue">
-                            <a href="#">
                                 <div class="image-container">
-                                    <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image">
+                                    <img src="<?php echo $row['image_url']; ?>" alt="" class="img-fluid radius-image" loading="lazy">
                                 </div>
                             </a>
                             <h4><a href="#feature" class="title-head"><?php echo $row['title']; ?></a></h4>
@@ -245,54 +247,6 @@ $result = mysqli_query($conn, $sql);
   <?php
   include('includes/footer.php');
   ?>
-  <!-- //footer -->
-
-  <!-- copyright -->
-  <section class="w3l-copyright">
-    <div class="container">
-      <div class="row bottom-copies">
-        <p class="col-lg-8 copy-footer-29">© 2021 Medick. All rights reserved. Design by <a
-            href="https://w3layouts.com/" target="_blank">
-            W3Layouts</a></p>
-
-        <div class="col-lg-4 main-social-footer-29">
-          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-  <!-- //copyright -->
-  <!--//footer-->
-  <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    &#10548;
-  </button>
-  <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("movetop").style.display = "block";
-      } else {
-        document.getElementById("movetop").style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <!-- /move top -->
   <!-- Template JavaScript -->
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/theme-change.js"></script>

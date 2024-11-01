@@ -31,7 +31,7 @@
 </head>
 
 <body>
-	<div class="main-bg">
+	<div class="main-bg" style="margin-bottom: 10px">
 		
 		<!-- content -->
 		<div class="lm-tabel">
@@ -60,7 +60,7 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-					<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
+						<a class="popup-with-zoom-anim" href="lien-he.php?service_package=co-ban">Đăng Ký Ngay</a>
 					</div>
 				</div>
 				<div class="lm-item-bottom"></div>
@@ -89,7 +89,7 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-					<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
+					<a class="popup-with-zoom-anim" href="lien-he.php?service_package=tieu-chuan">Đăng Ký Ngay</a>
 					</div>
 				</div>
 
@@ -121,7 +121,7 @@
 							<strong>Miến Phí</strong> Bảo Mật SSL</li>
 					</ul>
 					<div class="buy-button">
-						<a class="popup-with-zoom-anim" href="contact.php?service_package=caocap">Đăng Ký Ngay</a>
+						<a class="popup-with-zoom-anim" href="lien-he.php?service_package=cao-cap">Đăng Ký Ngay</a>
 					</div>
 				</div>
 				<div class="lm-item-bottom"></div>

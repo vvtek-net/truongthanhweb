@@ -1,16 +1,54 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
+<?php
+
+include('config/db_connection.php');
+require 'send_email.php';
+require 'mail_template.php';
+
+$service_package = isset($_GET['service_package'] ) ? $_GET['service_package'] :'';
+
+// insert contact
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['fullname']) && isset($_POST['phone'])) {
+  $fullname = $_POST['fullname'];
+  $phone = $_POST['phone'];
+  $description = $_POST['description'];
+  $email = $_POST['email'];
+  $link_website_template = $_POST['link_website_template'];
+
+  $sql = "INSERT INTO contact_customer (fullname, email, phone, description, link_website_template, service_package, created_at)
+          VALUES (?, ?, ?, ?, ?, ?, NOW());";
+  $stmt = $conn->prepare($sql);
+  $stmt->bind_param("ssssss", $fullname, $email, $phone, $description, $link_website_template, $service_package);
+  
+  if ($stmt->execute()) {
+    // Tạo email template
+    $emailTemplate = new EmailTemplate();
+    $template = $emailTemplate->getTemplate('contact_customers');
+
+    $title = "New Contacts";
+    $email = "ngxtuananh99@gmail.com";
+    $fullname = "Nguyễn Tuấn Anh";
+    $template = str_replace("{user_name}", $fullname, $template);
+
+    sendEmail($email, $fullname, $template, $title);
+  }
+
+  header("Location: index?msg=success");
+}
+
+?>
+
 <!doctype html>
-<html lang="zxx">
+<html lang="vi">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords"
-    content="Medick Responsive web template, Bootstrap Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    content="Thiết Kế Website, thiết kế website, website trọn gói, thiết kế website trọn gói" />
+  <meta name="google-site-verification" content="lvz5b_pEG1Ec-ihwjG1Y27Lue4YPQECITkn6S_6w2-4" />
+  <meta name="description" content="TruongThanhWeb cung cấp dịch vụ thiết kế website chuyên nghiệp, chuẩn SEO và trọn gói, cùng với các giải pháp tối ưu hóa tốc độ và quản trị website, giúp doanh nghiệp tăng cường hiệu quả kinh doanh trực tuyến.">
+
   <title>Liên Hệ - TruongThanhWeb - Thiết Kế Website Trọn Gói</title>
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -100,20 +138,21 @@ Author URL: http://w3layouts.com
           </div>
         </div>
         <div class="contact-right">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form action="" method="post" class="signin-form">
             <div class="input-grids">
-              <input type="text" name="w3lName" id="w3lName" placeholder="Họ Tên*" class="contact-input"
+              <input type="text" name="fullname" id="fullname" placeholder="Họ Tên*" class="contact-input"
                 required="" />
-              <input type="email" name="w3lSender" id="w3lSender" placeholder="Email Của Bạn*" class="contact-input"
+              <input type="email" name="email" id="email" placeholder="Email Của Bạn" class="contact-input" />
+              <input type="text" name="phone" id="phone" placeholder="SĐT của bạn*" class="contact-input"
                 required="" />
-              <input type="text" name="w3lWebsite" id="w3lWebsite" placeholder="Link Mẫu Website*" class="contact-input"
-                required="" />
+              <input type="text" name="link_website_template" id="link_website_template" placeholder="Link Mẫu Website" class="contact-input"
+              />
             </div>
             <div class="form-input">
-              <textarea name="w3lMessage" id="w3lMessage" placeholder="Mô Tả Yêu Cầu"></textarea>
+              <textarea name="description" id="description" placeholder="Mô Tả Yêu Cầu"></textarea>
             </div>
             <div class="w3l-submit text-lg-right">
-              <button class="btn btn-style btn-primary">Gửi Thông Tin</button>
+              <button type="submit" class="btn btn-style btn-primary">Gửi Thông Tin</button>
             </div>
           </form>
         </div>

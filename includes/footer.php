@@ -17,7 +17,7 @@
             <h6 class="footer-title-29">Về chúng tôi</h6>
             <ul>
               <li><a href="#Gioi-thieu.php">Giới Thiệu</a></li>
-              <li><a href="#tin-tuc.php">Tin Tức</a></li>
+              <li><a href="tin-tuc.php">Tin Tức</a></li>
               <li><a href="#dich-vu.php">Dịch Vụ</a></li>
               <li><a href="#Tuyen-dung.php">Tuyển Dụng</a></li>
               <li><a href="#tai-lieu.php">Tài Liệu</a></li>
